@@ -179,7 +179,7 @@ async function submitForm(btn) {
 
   if (!valid) return;
 
-  if (WEB3FORMS_ACCESS_KEY === "YOUR_WEB3FORMS_ACCESS_KEY") {
+  if (WEB3FORMS_ACCESS_KEY === "36bf76a3-7f0a-4216-bbc3-730e94d20bcf") {
     status.textContent = "⚠ Form isn't connected yet — add your Web3Forms access key in script.js (see comment above submitForm).";
     status.style.color = '#f59e0b';
     return;
