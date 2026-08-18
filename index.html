@@ -6,6 +6,18 @@
   <title>Hanna Samuel — QA · UI/UX · Full-Stack Dev · AI/ML</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- ═══ Privacy-friendly analytics (GoatCounter) ═══
+       Gives you a real dashboard (page views, referrers, country-level
+       location) that you log into and check anytime — no emails sent.
+       ONE-TIME SETUP:
+       1. Go to https://www.goatcounter.com and create a free account
+          (pick a site code, e.g. "hannasamuel")
+       2. Replace YOURCODE below with that site code
+       3. Check stats anytime at https://YOURCODE.goatcounter.com
+  -->
+  <script data-goatcounter="https://websiteportfolio.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -197,7 +209,27 @@
             <div class="av-tag">🇪🇹 Addis Ababa</div>
           </div>
 
-          <a href="#contact" class="btn-primary" style="margin-top:32px;display:inline-flex">Download CV →</a>
+          <div class="cv-dl-wrap" style="margin-top:32px">
+            <button type="button" class="btn-primary" id="cvDlBtn" onclick="toggleCvMenu(event)">Download CV ↓</button>
+            <div class="cv-dl-menu" id="cvDlMenu">
+              <a href="cv-qa.pdf" download class="cv-dl-item">
+                <span class="cv-dl-icon"></span>
+                <span><strong>QA Resume</strong><small>Testing, defect tracking, ERP QA</small></span>
+              </a>
+              <a href="cv-uiux.pdf" download class="cv-dl-item">
+                <span class="cv-dl-icon"></span>
+                <span><strong>UI/UX Resume</strong><small>Design, Figma, prototyping</small></span>
+              </a>
+              <a href="cv-fullstack.pdf" download class="cv-dl-item">
+                <span class="cv-dl-icon"></span>
+                <span><strong>Full-Stack Resume</strong><small>React, Python, Odoo</small></span>
+              </a>
+              <a href="cv-ml.pdf" download class="cv-dl-item">
+                <span class="cv-dl-icon">🤖</span>
+                <span><strong>ML Resume</strong><small>Machine learning, data, fintech</small></span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -313,37 +345,37 @@
         <div class="skills-col">
           <h4 class="sk-cat">Frontend</h4>
           <div class="sk-bars">
-            <div class="sk-row"><span>React</span><div class="sk-track"><div class="sk-fill" data-w="85"></div></div><span class="sk-pct">85%</span></div>
-            <div class="sk-row"><span>HTML / CSS / JavaScript</span><div class="sk-track"><div class="sk-fill" data-w="92"></div></div><span class="sk-pct">92%</span></div>
-            <div class="sk-row"><span>Bootstrap</span><div class="sk-track"><div class="sk-fill" data-w="85"></div></div><span class="sk-pct">85%</span></div>
-            <div class="sk-row"><span>Figma Prototyping</span><div class="sk-track"><div class="sk-fill" data-w="88"></div></div><span class="sk-pct">88%</span></div>
+            <div class="sk-row"><span>React</span><div class="sk-track"><div class="sk-fill" data-w="85"></div></div></div>
+            <div class="sk-row"><span>HTML / CSS / JavaScript</span><div class="sk-track"><div class="sk-fill" data-w="92"></div></div></div>
+            <div class="sk-row"><span>Bootstrap</span><div class="sk-track"><div class="sk-fill" data-w="85"></div></div></div>
+            <div class="sk-row"><span>Figma Prototyping</span><div class="sk-track"><div class="sk-fill" data-w="88"></div></div></div>
           </div>
         </div>
         <div class="skills-col">
           <h4 class="sk-cat">Backend &amp; DB</h4>
           <div class="sk-bars">
-            <div class="sk-row"><span>Python / Flask</span><div class="sk-track"><div class="sk-fill" data-w="82"></div></div><span class="sk-pct">82%</span></div>
-            <div class="sk-row"><span>Odoo API / XML</span><div class="sk-track"><div class="sk-fill" data-w="88"></div></div><span class="sk-pct">88%</span></div>
-            <div class="sk-row"><span>PostgreSQL / MySQL</span><div class="sk-track"><div class="sk-fill" data-w="80"></div></div><span class="sk-pct">80%</span></div>
-            <div class="sk-row"><span>MongoDB / Supabase</span><div class="sk-track"><div class="sk-fill" data-w="72"></div></div><span class="sk-pct">72%</span></div>
+            <div class="sk-row"><span>Python / Flask</span><div class="sk-track"><div class="sk-fill" data-w="82"></div></div></div>
+            <div class="sk-row"><span>Odoo API / XML</span><div class="sk-track"><div class="sk-fill" data-w="88"></div></div></div>
+            <div class="sk-row"><span>PostgreSQL / MySQL</span><div class="sk-track"><div class="sk-fill" data-w="80"></div></div></div>
+            <div class="sk-row"><span>MongoDB / Supabase</span><div class="sk-track"><div class="sk-fill" data-w="72"></div></div></div>
           </div>
         </div>
         <div class="skills-col">
           <h4 class="sk-cat">QA &amp; Design</h4>
           <div class="sk-bars">
-            <div class="sk-row"><span>Test Case Design &amp; Execution</span><div class="sk-track"><div class="sk-fill" data-w="92"></div></div><span class="sk-pct">92%</span></div>
-            <div class="sk-row"><span>Defect Tracking (Jira)</span><div class="sk-track"><div class="sk-fill" data-w="90"></div></div><span class="sk-pct">90%</span></div>
-            <div class="sk-row"><span>Regression &amp; Usability Testing</span><div class="sk-track"><div class="sk-fill" data-w="85"></div></div><span class="sk-pct">85%</span></div>
-            <div class="sk-row"><span>Cypress / Selenium (self-study)</span><div class="sk-track"><div class="sk-fill" data-w="60"></div></div><span class="sk-pct">60%</span></div>
+            <div class="sk-row"><span>Test Case Design &amp; Execution</span><div class="sk-track"><div class="sk-fill" data-w="92"></div></div></div>
+            <div class="sk-row"><span>Defect Tracking (Jira)</span><div class="sk-track"><div class="sk-fill" data-w="90"></div></div></div>
+            <div class="sk-row"><span>Regression &amp; Usability Testing</span><div class="sk-track"><div class="sk-fill" data-w="85"></div></div></div>
+            <div class="sk-row"><span>Cypress / Selenium (self-study)</span><div class="sk-track"><div class="sk-fill" data-w="60"></div></div></div>
           </div>
         </div>
         <div class="skills-col">
           <h4 class="sk-cat">AI / ML / Data</h4>
           <div class="sk-bars">
-            <div class="sk-row"><span>Python / Pandas / Scikit-learn</span><div class="sk-track"><div class="sk-fill" data-w="80"></div></div><span class="sk-pct">80%</span></div>
-            <div class="sk-row"><span>Feature Engineering &amp; EDA</span><div class="sk-track"><div class="sk-fill" data-w="78"></div></div><span class="sk-pct">78%</span></div>
-            <div class="sk-row"><span>MLflow / FastAPI Deployment</span><div class="sk-track"><div class="sk-fill" data-w="70"></div></div><span class="sk-pct">70%</span></div>
-            <div class="sk-row"><span>Model Evaluation</span><div class="sk-track"><div class="sk-fill" data-w="75"></div></div><span class="sk-pct">75%</span></div>
+            <div class="sk-row"><span>Python / Pandas / Scikit-learn</span><div class="sk-track"><div class="sk-fill" data-w="80"></div></div></div>
+            <div class="sk-row"><span>Feature Engineering &amp; EDA</span><div class="sk-track"><div class="sk-fill" data-w="78"></div></div></div>
+            <div class="sk-row"><span>MLflow / FastAPI Deployment</span><div class="sk-track"><div class="sk-fill" data-w="70"></div></div></div>
+            <div class="sk-row"><span>Model Evaluation</span><div class="sk-track"><div class="sk-fill" data-w="75"></div></div></div>
           </div>
         </div>
       </div>
@@ -363,16 +395,7 @@
 
         <div class="project-feature reveal">
           <div class="pf-visual pf-visual-1">
-            <div class="pf-mockup">
-              <div class="pm-bar"><span></span><span></span><span></span></div>
-              <div class="pm-content">
-                <div class="pm-row pm-row-wide"></div>
-                <div class="pm-row pm-row-med"></div>
-                <div class="pm-cards">
-                  <div class="pm-card"></div><div class="pm-card"></div><div class="pm-card"></div>
-                </div>
-              </div>
-            </div>
+            <img src="" alt="">
           </div>
           <div class="pf-info">
             <span class="pf-cat">Full-Stack · Odoo · HR Tech</span>
@@ -490,16 +513,17 @@
         </div>
         <div class="mp-card">
           <span class="mp-icon">🤖</span>
-          <h4>Theft_fuel Telegram Bot</h4>
-          <p>A Telegram bot that automates file retrieval from a folder using a list of license plate (GPS-only cars) filters, and sends fuel theft cards at scheduled times.</p>
+          <h4>Boll Bounding Telegram Bot</h4>
+          <p>A Telegram bot automating speed and direction controls, demonstrating hands-on automation and logical scripting.</p>
           <div class="mp-tags"><span>Python</span><span>Automation</span></div>
         </div>
-        <div class="mp-card">
+         <div class="mp-card">
           <span class="mp-icon">🤖</span>
           <h4>Boll Bounding Telegram Bot</h4>
           <p>A Telegram bot automating speed and direction controls, demonstrating hands-on automation and logical scripting.</p>
           <div class="mp-tags"><span>Python</span><span>Automation</span></div>
         </div>
+
       </div>
     </div>
   </section>
@@ -557,8 +581,8 @@
             <span>Test Design</span><span>Test Management</span><span>Static Testing</span>
           </div>
           <div class="tc-meta">
-            <span>ISTQB</span>
-            <span>Certificate</span>
+            <span>🏫 ISTQB</span>
+            <span>🎓 Certificate</span>
           </div>
         </div>
 
@@ -700,10 +724,10 @@
           <div class="cs-block">
             <h4>Direct Contact</h4>
             <a href="mailto:hannademeke133@gmail.com" class="cs-item">
-              <span><div><small>Email</small><span>hannademeke133@gmail.com</span></div>
+              <span>📧</span><div><small>Email</small><span>hannademeke133@gmail.com</span></div>
             </a>
             <a href="tel:+251941315087" class="cs-item">
-              <span><div><small>Phone / Telegram</small><span>+251 941 315 087</span></div>
+              <span>📱</span><div><small>Phone / Telegram</small><span>+251 941 315 087</span></div>
             </a>
             <div class="cs-item">
               <span>📍</span><div><small>Location</small><span>Addis Ababa, Ethiopia</span></div>

@@ -157,7 +157,7 @@ statNums.forEach(el => statObserver.observe(el));
    That's it — every submission will land in hannademeke133@gmail.com.
    Free tier: unlimited forms, up to 250 submissions/month.
 */
-const WEB3FORMS_ACCESS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY";
+const WEB3FORMS_ACCESS_KEY = "36bf76a3-7f0a-4216-bbc3-730e94d20bcf";
 
 async function submitForm(btn) {
   const form = document.getElementById('contactForm');
@@ -179,7 +179,7 @@ async function submitForm(btn) {
 
   if (!valid) return;
 
-  if (WEB3FORMS_ACCESS_KEY === "36bf76a3-7f0a-4216-bbc3-730e94d20bcf") {
+  if (WEB3FORMS_ACCESS_KEY === "YOUR_WEB3FORMS_ACCESS_KEY") {
     status.textContent = "⚠ Form isn't connected yet — add your Web3Forms access key in script.js (see comment above submitForm).";
     status.style.color = '#f59e0b';
     return;
@@ -230,6 +230,21 @@ async function submitForm(btn) {
   }, 3500);
 }
 window.submitForm = submitForm;
+
+/* ─── CV Download Dropdown ─── */
+function toggleCvMenu(e) {
+  e.stopPropagation();
+  document.getElementById('cvDlMenu').classList.toggle('open');
+}
+document.addEventListener('click', (e) => {
+  const menu = document.getElementById('cvDlMenu');
+  const btn = document.getElementById('cvDlBtn');
+  if (!menu) return;
+  if (menu.classList.contains('open') && !menu.contains(e.target) && e.target !== btn) {
+    menu.classList.remove('open');
+  }
+});
+window.toggleCvMenu = toggleCvMenu;
 
 /* ─── Smooth scroll offset for fixed nav ─── */
 document.querySelectorAll('a[href^="#"]').forEach(link => {
