@@ -820,6 +820,37 @@ nav.scrolled { box-shadow: var(--shadow-sm); }
 .pf-visual-2 { background: linear-gradient(135deg, #09090b 0%, #27272a 50%, #52525b 100%); }
 .pf-visual-3 { background: linear-gradient(135deg, #1c1c1f 0%, #3a3a3f 50%, #6b7280 100%); }
 
+/* ─── Screenshot Slideshow (pure CSS crossfade) ─── */
+.pf-slideshow { position: relative; width: 100%; height: 100%; }
+.pf-slideshow img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: top;
+  opacity: 0;
+}
+.pf-slide-b{
+  width: 150%;
+  height: 50%;
+}
+.pf-slideshow img:only-child { opacity: 1; animation: none; position: static; }
+.pf-slide-a { animation: pfCrossfadeA 8s ease-in-out infinite; }
+.pf-slide-b { animation: pfCrossfadeB 8s ease-in-out infinite; }
+@keyframes pfCrossfadeA { 0%,42% { opacity: 1; } 50%,92% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes pfCrossfadeB { 0%,42% { opacity: 0; } 50%,92% { opacity: 1; } 100% { opacity: 0; } }
+.pf-slideshow::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.35) 100%);
+  pointer-events: none;
+}
+
+/* ─── Mini-card thumbnail ─── */
+.mp-thumb {
+  width: 100%; aspect-ratio: 16/10; object-fit: cover; object-position: top;
+  border-radius: var(--radius); border: 1px solid var(--border);
+  margin-bottom: 14px;
+}
+.pf-chart { width: 100%; height: 100%; display: block; }
+
 .pf-mockup {
   width: 100%; height: 100%;
   display: flex; flex-direction: column;

@@ -225,7 +225,7 @@
                 <span><strong>Full-Stack Resume</strong><small>React, Python, Odoo</small></span>
               </a>
               <a href="cv-ml.pdf" download class="cv-dl-item">
-                <span class="cv-dl-icon">🤖</span>
+                <span class="cv-dl-icon"></span>
                 <span><strong>ML Resume</strong><small>Machine learning, data, fintech</small></span>
               </a>
             </div>
@@ -395,7 +395,10 @@
 
         <div class="project-feature reveal">
           <div class="pf-visual pf-visual-1">
-            <img src="" alt="">
+            <div class="pf-slideshow">
+              <img class="pf-slide-a" src="OT_all_over.png" alt="Overtime records list in the custom Odoo OT module, with the OT Management menu open">
+              <img class="pf-slide-b " src="OT_finger_print_fetch.png" alt="Quick Import dialog for uploading biometric .dat fingerprint files to compute overtime">
+            </div>
           </div>
           <div class="pf-info">
             <span class="pf-cat">Full-Stack · Odoo · HR Tech</span>
@@ -417,31 +420,40 @@
 
         <div class="project-feature pf-reverse reveal">
           <div class="pf-visual pf-visual-2">
-            <div class="pf-mockup">
-              <div class="pm-bar"><span></span><span></span><span></span></div>
-              <div class="pm-content">
-                <div class="pm-chart">
-                  <div class="pm-bar-chart">
-                    <div class="pmbc-bar" style="height:60%"></div>
-                    <div class="pmbc-bar" style="height:85%"></div>
-                    <div class="pmbc-bar" style="height:45%"></div>
-                    <div class="pmbc-bar" style="height:70%"></div>
-                    <div class="pmbc-bar" style="height:90%"></div>
-                    <div class="pmbc-bar" style="height:55%"></div>
-                  </div>
-                </div>
-                <div class="pm-row pm-row-med" style="margin-top:12px"></div>
-              </div>
-            </div>
+            <svg class="pf-chart" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rising financial inclusion forecast line chart">
+              <defs>
+                <linearGradient id="fcArea" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#a1a1aa" stop-opacity="0.35"/>
+                  <stop offset="100%" stop-color="#a1a1aa" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <g stroke="#ffffff" stroke-opacity="0.08" stroke-width="1">
+                <line x1="0" y1="50" x2="400" y2="50"/>
+                <line x1="0" y1="100" x2="400" y2="100"/>
+                <line x1="0" y1="150" x2="400" y2="150"/>
+                <line x1="0" y1="200" x2="400" y2="200"/>
+              </g>
+              <path d="M0,200 L50,185 L100,160 L150,170 L200,130 L250,110 L300,90 L400,60 L400,250 L0,250 Z" fill="url(#fcArea)"/>
+              <polyline points="0,200 50,185 100,160 150,170 200,130 250,110 300,90" fill="none" stroke="#e4e4e7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="300,90 400,60" fill="none" stroke="#e4e4e7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 6" opacity="0.75"/>
+              <g fill="#f4f4f5">
+                <circle cx="0" cy="200" r="3.5"/>
+                <circle cx="100" cy="160" r="3.5"/>
+                <circle cx="200" cy="130" r="3.5"/>
+                <circle cx="300" cy="90" r="4" stroke="#a1a1aa" stroke-width="2"/>
+              </g>
+              <text x="14" y="26" fill="#e4e4e7" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700">Financial Inclusion Index</text>
+              <text x="304" y="86" fill="#a1a1aa" font-family="Helvetica, Arial, sans-serif" font-size="10">forecast →</text>
+            </svg>
           </div>
           <div class="pf-info">
             <span class="pf-cat">ML Engineering · Fintech · Data</span>
             <h3 class="pf-title">Financial Inclusion Forecasting System</h3>
             <p class="pf-desc">A machine learning model predicting financial inclusion trends using real-world Ethiopian datasets — from data cleaning and feature engineering to model training and evaluation, built during 10 Academy's AI Mastering Training.</p>
             <div class="pf-highlights">
-              <div class="pf-hl"><span>📊</span><span>Full EDA and feature engineering pipeline</span></div>
-              <div class="pf-hl"><span>🧮</span><span>Model evaluation with accuracy &amp; ROC-AUC</span></div>
-              <div class="pf-hl"><span>📈</span><span>Visual insights for data-driven decisions</span></div>
+              <div class="pf-hl"><span></span><span>Full EDA and feature engineering pipeline</span></div>
+              <div class="pf-hl"><span></span><span>Model evaluation with accuracy &amp; ROC-AUC</span></div>
+              <div class="pf-hl"><span></span><span>Visual insights for data-driven decisions</span></div>
             </div>
             <div class="pf-stack">
               <span>Python</span><span>Scikit-learn</span><span>Pandas</span>
@@ -454,18 +466,9 @@
 
         <div class="project-feature reveal">
           <div class="pf-visual pf-visual-3">
-            <div class="pf-mockup">
-              <div class="pm-bar"><span></span><span></span><span></span></div>
-              <div class="pm-content">
-                <div class="pm-row pm-row-wide"></div>
-                <div class="pm-grid-2">
-                  <div class="pm-card pm-card-tall"></div>
-                  <div>
-                    <div class="pm-row" style="margin-bottom:8px"></div>
-                    <div class="pm-row pm-row-med"></div>
-                  </div>
-                </div>
-              </div>
+            <div class="pf-slideshow">
+              <img class="pf-slide-a" src="WUMIS_intefarface.png" alt="WUMIS ERP login screen with Ministry of Water and Energy branding">
+              <img class="pf-slide-b" src="WUMIS_interface.png" alt="WUMIS ERP dashboard sidebar showing HR, Finance, Billing, and Asset Management modules">
             </div>
           </div>
           <div class="pf-info">
@@ -488,6 +491,7 @@
       <!-- Small project cards -->
       <div class="mini-projects reveal">
         <div class="mp-card">
+          <img class="mp-thumb" src="ID_interfase.png" alt="Employee ID card generator interface showing a generated ID card with department, position, and ID number">
           <span class="mp-icon">🆔</span>
           <h4>Employee ID Card Generator</h4>
           <p>End-to-end pipeline fetching real-time employee data from Odoo to auto-generate print-ready ID cards, with a custom photo-editing UI built in React.</p>
@@ -517,12 +521,7 @@
           <p>A Telegram bot automating speed and direction controls, demonstrating hands-on automation and logical scripting.</p>
           <div class="mp-tags"><span>Python</span><span>Automation</span></div>
         </div>
-         <div class="mp-card">
-          <span class="mp-icon">🤖</span>
-          <h4>Boll Bounding Telegram Bot</h4>
-          <p>A Telegram bot automating speed and direction controls, demonstrating hands-on automation and logical scripting.</p>
-          <div class="mp-tags"><span>Python</span><span>Automation</span></div>
-        </div>
+ 
 
       </div>
     </div>
