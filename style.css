@@ -486,6 +486,8 @@ nav.scrolled { box-shadow: var(--shadow-sm); }
   position: relative; z-index: 1;
 }
 .section-alt { background: var(--bg-2); }
+/* Keep the About section above the next section so the CV dropdown isn't covered */
+#about { z-index: 5; }
 .container { max-width: 1200px; margin: 0 auto; }
 .section-header { margin-bottom: 64px; }
 .sec-label {
@@ -542,7 +544,7 @@ nav.scrolled { box-shadow: var(--shadow-sm); }
 .cv-dl-wrap { position: relative; display: inline-block; }
 .cv-dl-menu {
   position: absolute; top: calc(100% + 10px); left: 0;
-  min-width: 280px; z-index: 40;
+  min-width: 280px; max-width: calc(100vw - 32px); z-index: 40;
   background: var(--bg-card); border: 1px solid var(--border-h);
   border-radius: var(--radius-lg); padding: 8px;
   box-shadow: var(--shadow);
